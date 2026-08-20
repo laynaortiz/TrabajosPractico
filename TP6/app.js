@@ -1,84 +1,105 @@
-// Ejercicio 1
-let edad = 18;
+let edad1 = document.querySelector("#pedad1")
+let bedad1 = document.querySelector("#btnedad1")
+let edad1 = 18
 
-document.getElementById("boton1").onclick = function () {
-    if (edad >= 18) {
-        document.getElementById("parrafo1").textContent = "Eres mayor de edad";
-    } else {
-        document.getElementById("parrafo1").textContent = "Eres menor de edad";
+
+bedad1.onclick = function(){
+    if(edad1 >= 18)
+    {
+        edad1.textContent = "Eres mayor de edad"
+    }else{
+        edad1.textContent = "Eres menor de edad"
     }
-};
+}
 
-// Ejercicio 2
-let nombreUsuario = "Nahuel";
 
-document.getElementById("boton2").onclick = function () {
-    if (nombreUsuario == "Nahuel") {
-        document.getElementById("parrafo2").textContent = "Bienvenido Nahuel, ¿cómo estás?";
-    } else {
-        document.getElementById("parrafo2").textContent = "Bienvenido usuario";
+
+let nombreUsuario = "Marcos"
+let bnombre = document.querySelector("#btnnombre")
+let nombre = document.querySelector("#pnombre")
+
+
+bnombre.onclick = function(){
+    if(nombreUsuario == "Nahuel" || nombreUsuario == "Marcos")
+    {
+        nombre.textContent = "Bienvenido/a " + nombreUsuario + " ¿Cómo andas?"
+    }   
+    else{
+        nombre.textContent = "Bienvenido/a " + nombreUsuario
     }
-};
+}
 
-// Ejercicio 3
-let nombreUsuario2 = "Marcos";
 
-document.getElementById("boton3").onclick = function () {
-    if (nombreUsuario2 == "Nahuel" || nombreUsuario2 == "Marcos") {
-        document.getElementById("parrafo3").textContent = "Bienvenido " + nombreUsuario2 + " ¿cómo estás?";
-    } else {
-        document.getElementById("parrafo3").textContent = "Bienvenido " + nombreUsuario2;
+
+
+let numero1 = 45
+let resultado = document.querySelector("#presultado")
+let bresultado = document.querySelector("#btnresultado")
+
+
+bresultado.onclick = function(){
+if(numero1 > 0){
+    resultado.textContent = "El número es positivo"
+} 
+else if(numero1 == 0){
+    resultado.textContent = "El número es cero"
+}
+else if(numero1 < 0){
+    resultado.textContent = "El número es negativo"
+}
+
+}
+
+
+let edad2 = 46
+let pedad2 = document.querySelector("#pedad2")
+let bedad2 = document.querySelector("#btnedad2")
+  
+bedad2.onclick = function(){
+if((edad2 >= 6) && (edad2 <= 11)){
+    pedad2.textContent = "Niño (6 a 11 años)"
+}
+else if((edad2 >= 12) && (edad2 <= 18)){
+    pedad2.textContent = "Adolescente (12 a 18 años)"
+}
+else if((edad2 >= 19) && (edad2 <= 26)){
+    pedad2.textContent = "Joven (19 a 26 años)"
+}
+else if((edad2 >= 27) && (edad2 <= 59)){
+    pedad2.textContent = "Adulto (27 a 59 años)"
+} 
+else if(edad2 > 60){
+    pedad2.textContent = "Abuelo (60 años o más)"
+}}
+
+
+let dia = "lunes"
+let pdia = document.querySelector("#pdia")
+let bdia = document.querySelector("#btndia")
+
+
+btndia.onclick = function(){
+    if(dia == "lunes" || dia == "martes" || dia == "miercoles" || dia == "jueves" || dia == "viernes"){
+        pdia.textContent = "Es un día laboral"
     }
-};
-
-// Ejercicio 4
-let numero = 0;
-
-document.getElementById("boton4").onclick = function () {
-    if (numero > 0) {
-        document.getElementById("parrafo4").textContent = "El número es positivo";
-    } else if (numero < 0) {
-        document.getElementById("parrafo4").textContent = "El número es negativo";
-    } else {
-        document.getElementById("parrafo4").textContent = "El número es cero";
+    else if(dia == "sabado" || dia == "domingo"){
+        pdia.textContent = "Es el finde"
     }
-};
+}
 
-// Ejercicio 5
-let edad2 = 20;
 
-document.getElementById("boton5").onclick = function () {
-    if (edad2 >= 6 && edad2 <= 11) {
-        document.getElementById("parrafo5").textContent = "Niño";
-    } else if (edad2 >= 12 && edad2 <= 18) {
-        document.getElementById("parrafo5").textContent = "Adolescente";
-    } else if (edad2 >= 19 && edad2 <= 26) {
-        document.getElementById("parrafo5").textContent = "Joven";
-    } else if (edad2 >= 27 && edad2 <= 59) {
-        document.getElementById("parrafo5").textContent = "Adulto";
-    } else if (edad2 >= 60) {
-        document.getElementById("parrafo5").textContent = "Anciano";
+
+
+let btncontrasenia = document.querySelector("#btncontrasenia")
+let pcontrasenia = document.querySelector("#pcontrasenia")
+let contrasenia = "ñoquis"
+
+
+btncontrasenia.onclick = function(){
+    if (contrasenia == "ñoquis"){
+        pcontrasenia.textContent = "Acceso concedido"
     }
-};
-
-// Ejercicio 6
-let dia = "sabado";
-
-document.getElementById("boton6").onclick = function () {
-    if (dia == "lunes" || dia == "martes" || dia == "miercoles" || dia == "jueves" || dia == "viernes") {
-        document.getElementById("parrafo6").textContent = "Es un día laborable";
-    } else {
-        document.getElementById("parrafo6").textContent = "Es fin de semana";
+    else{
+        pcontrasenia.textContent = "Acceso denegado"
     }
-};
-
-// Ejercicio 7
-let contrasenia = "secreto";
-
-document.getElementById("boton7").onclick = function () {
-    if (contrasenia == "secreto") {
-        document.getElementById("parrafo7").textContent = "Acceso concedido";
-    } else {
-        document.getElementById("parrafo7").textContent = "Acceso denegado";
-    }
-};
+}
