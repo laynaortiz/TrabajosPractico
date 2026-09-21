@@ -12,16 +12,19 @@ h1{
     color: darkblue;
 }
 
+h2{
+    color: darkblue;
+}
+
 p{
     font-size: 20px;
     color: black;
 }
 
-#botones{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+input{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
 }
 
 button{
